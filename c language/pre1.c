@@ -62,7 +62,55 @@ for(int i=1;i<strlen(array);i++){
 }
 printf("\n %d",smallest);
 // 9
- 
+ const char str[] = "hello world";
+    const char substr[] = "world";
+for(int i=0;i<=strlen(str);i++){
+    for(int j=0;j<=strlen(substr);j++){
+        if(str[i+j]!=substr[j]){break;}
+        if(j==strlen(substr)){printf("true");}
+    }
+}
+// 11
+int array[]={1,2,3,4,5};
+     int length=sizeof(array);
+     int sum=0;
+for (int i=0;i<5;i++){
+    sum=sum+array[i];
+}printf("%d",sum);
+// 12
+int num=5;
+int n1=0;
+int n2=1;
+int sum;
+for(int i=1;i<=num;i++){
+    printf("\n %d",n1);
+    sum=n1+n2;
+    n1=n2;
+    n2=sum;
+}
+// 13
+int pnum=22;
+int count=0;
+for(int i=2;i<pnum;i++){
+    if(pnum%i==0){
+        count++;
+    }
+}
+if(count==0){printf("is prime num");}
+else{printf("is not prime num");}
+// 14
+char string[100]; 
+scanf("%s",&string);
+int sum=0;
+int i;
+for (i=0;i<strlen(string);i++){
+    char c=string[i];
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+        sum++;
+    }
+}
+printf("\n %d",sum);
+// 15
 
     return 0;
 }
