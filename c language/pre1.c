@@ -328,6 +328,7 @@ printf("\n %d",sum);
  for(asci=97;asci<=122;asci++){
      if(str1[0]==asci && str2[0]==asci+1){
          printf("true");
+         break;
      }else{
          printf("false");
          break;
@@ -348,15 +349,34 @@ int num;
     }
     printf("%d",pnum);
 // 31
-int i;
-int j;
-num=14;
-for(int i=9,i<=num;i++){
-    for(int j=2;j<=i;j++){
-        if(i%j==0){
-            printf("%d",i);
+#include <stdio.h>
+
+int is_prime(int num) {
+    if (num <= 1) {
+        return 0;
+    }
+    for (int i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            return 0;
         }
     }
+    return 1;
+}
+int main() {
+    int num1 = 10;
+    int num2 = 50;
+    
+    if (num1 > num2) {
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+    }
+    for (int i = num1; i <= num2; i++) {
+        if (is_prime(i)) {
+            printf("%d\n",i);
+        }
+    }
+ return 0;
 }
 // 32  #include <math.h>
     int num, originalNum, remainder, result = 0, count = 0;
