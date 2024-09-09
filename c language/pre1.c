@@ -322,18 +322,18 @@ printf("\n %d",sum);
    }
    printf("%s",newstr);
 // 29
- char str1[]="manama";
- char str2[]="pamana";
- int asci;
- for(asci=97;asci<=122;asci++){
-     if(str1[0]==asci && str2[0]==asci+1){
-         printf("true");
-         break;
-     }else{
-         printf("false");
-         break;
-     }
- }
+    char str1[]="manama";
+    char str2[]="pamana";
+    int asci;
+    for(asci=97;asci<=122;asci++){
+        if(str1[0]==asci && str2[0]==asci+1){
+            printf("true");
+            break;
+        }else{
+            printf("false");
+            break;
+        }
+    }
 // 30
 int num;
     printf("enter the num:");
@@ -351,32 +351,19 @@ int num;
 // 31
 #include <stdio.h>
 
-int is_prime(int num) {
-    if (num <= 1) {
-        return 0;
+int main(){
+    int a=25;
+    int i;
+    int j;
+for(i=2;i<a;i++){
+    for(j=2;j<i;j++){
+        if(i%j==0){break;}
+        else{ int x=i}
+    printf("%d \n",i);
+    break;
     }
-    for (int i = 2; i <= num / 2; i++) {
-        if (num % i == 0) {
-            return 0;
-        }
-    }
-    return 1;
 }
-int main() {
-    int num1 = 10;
-    int num2 = 50;
-    
-    if (num1 > num2) {
-        int temp = num1;
-        num1 = num2;
-        num2 = temp;
-    }
-    for (int i = num1; i <= num2; i++) {
-        if (is_prime(i)) {
-            printf("%d\n",i);
-        }
-    }
- return 0;
+return 0;
 }
 // 32  #include <math.h>
     int num, originalNum, remainder, result = 0, count = 0;
