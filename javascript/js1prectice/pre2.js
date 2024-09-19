@@ -26,6 +26,21 @@
 //     }console.log(array)
 
 
+// // profit in arr
+// var pr=[7,2,6,1,8,9]
+// var pro=pr[1]-pr[0];
+// for(var i=0;i<pr.length;i++){
+//     for(var j=i+1;j<pr.length;j++){
+//         var npro=pr[j]-pr[i];
+//         // console.log(npro)
+//         if(pro<npro){
+//             pro=npro;
+//         }
+//     }
+// }
+// console.log("max profit is ",pro)
+
+
 
 
 

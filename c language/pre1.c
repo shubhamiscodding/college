@@ -222,7 +222,7 @@ printf("a-b= %d\n",num1-num2);
 printf("a+b= %d\n",num1+num2);
 printf("a/b= %d\n",num1/num2);
 printf("a*b= %d\n",num1*num2);
-// 15
+// 15  
 int arr[15]={1,2,4,5,6,8,9};
 int i;
 int len=sizeof(arr)/sizeof(arr[0]);
@@ -273,7 +273,13 @@ f=v;
 printf("%d",f);
 printf("%d",g);
 // 21
-
+ char ch='s';
+ int as;
+ for(int as=97;as<=122;as++){
+     if(as == ch){
+         printf("%d",as);
+     }
+ }
 // 22
 float c=234;
 float f;
@@ -286,8 +292,11 @@ printf("f= %.1f",(F - 32) * 5/9);
 // 24
 int sum=0;
 int i;
-int num=5;
-for(i=0;i<=num;i++){sum+=i;}printf("%d",sum);
+int num=100;
+for(i=0;i<=num;i++){
+    sum+=i;
+}
+printf("%d",sum);
 // 25
 char string[100]; 
 scanf("%s",&string);
@@ -323,17 +332,13 @@ printf("\n %d",sum);
    printf("%s",newstr);
 // 29
     char str1[]="manama";
-    char str2[]="pamana";
-    int asci;
-    for(asci=97;asci<=122;asci++){
-        if(str1[0]==asci && str2[0]==asci+1){
+    char str2[]="weamana";
+//    no need to run loop in this code
+        if(str1[0]+1 == str2[0]){
             printf("true");
-            break;
         }else{
             printf("false");
-            break;
         }
-    }
 // 30
 int num;
     printf("enter the num:");
@@ -358,42 +363,36 @@ int main(){
 for(i=2;i<a;i++){
     for(j=2;j<i;j++){
         if(i%j==0){break;}
-        else{ int x=i}
-    printf("%d \n",i);
-    break;
+        if(j==i-1){printf("%d \n",i);}
     }
 }
 return 0;
 }
 // 32  #include <math.h>
-    int num, originalNum, remainder, result = 0, count = 0;
+#include <stdio.h>
+#include <math.h>
 
-    printf("Enter an integer: ");
-    scanf("%d", &num);
-
-    originalNum = num;
-
-    // Count the number of digits
-    while (num != 0) {
-        num /= 10;
-        ++count;
-    }
-
-    num = originalNum;
-
-    // Calculate the sum of the powers of digits
-    while (num != 0) {
-        remainder = num % 10;
-        result += pow(remainder, count);
-        num /= 10;
-    }
-
-    // Check if the result is equal to the original number
-    if (result == originalNum) {
-        printf("%d is an Armstrong number.\n", originalNum);
-    } else {
-        printf("%d is not an Armstrong number.\n", originalNum);
-     }
+int main() {
+int num=153;
+int onum=num;
+int i=num;
+int sum=0;
+int count=0;
+while (num!=0){
+    num/=10;
+    count++;
+}
+num=i;
+while(num != 0){
+    num=i;
+    num=num%10;
+    sum=sum+pow(num,count);
+    i=i/10;
+}
+if (sum == onum){printf("true");}
+else{printf("false");}
+    return 0;
+}
     // 33
     int arr[15]={1,2,4,5,6,8,9};
 int i;
