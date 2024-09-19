@@ -42,6 +42,16 @@ body{
  .odd{
     border: 1px solid black;
     height: 70px;
-    
     background-color: whitesmoke;
+ }
+
+ div #pice{
+    font-size: 50px;
+    text-align: center;
+    color: aqua;
+ }
+ div #black{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(4, 43, 43);
  }
