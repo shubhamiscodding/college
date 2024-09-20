@@ -12,12 +12,10 @@ table{
     height: 300px;
     width: 510px;
     margin-left: 10px;
-    border: 1px solid black;
-    border-collapse: collapse;
     font-size: 10px;
 }
 tr{
-    border-top: 1px solid rgb(0, 0, 0);
+
     border-bottom: 1px solid rgb(0, 0, 0);
     
 }
