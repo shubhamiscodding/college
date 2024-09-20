@@ -13,9 +13,10 @@ table{
     width: 510px;
     margin-left: 10px;
     font-size: 10px;
+    border-collapse: collapse;
 }
-tr{
-
+td,th{
+    border-top: 1px solid flex;
     border-bottom: 1px solid rgb(0, 0, 0);
     
 }
