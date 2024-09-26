@@ -1,31 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int arr[] = {1,2,3,4,5,6};
-    int len = sizeof(arr) / sizeof(arr[0]);
-    int narr[100];  
-    int temp;
-
-for (int i = 0; i < len; i++) {
-        narr[i] = arr[i];
-}
-
-    for (int i = 0; i < len - 1; i++) {
-        for (int j = 0; j < len - 1 - i; j++) {
-            if (narr[j] > narr[j + 1]) {
-                // Swap the elements in narr[]
-                temp = narr[j];
-                narr[j] = narr[j + 1];
-                narr[j + 1] = temp;
-            }
+    int arr[] = {1,2,3,4,5,8,7};
+    int len = sizeof(arr)/sizeof(arr[0]);
+    int count = 0;
+ 
+    
+    for(int i=0; i<len; i++){
+        if(arr[i] <= arr[i-1]){
+            count = count + 1;
         }
     }
-    if(arr==narr){
-        printf("true");
+    if(count == 0){
+        printf("Yes");
+    }else{
+        printf("No");
     }
-else{
-        printf("false");
-    }
+    
 
-    return 0;
+return 0;
 }

@@ -1,14 +1,59 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    color: aliceblue;
+    font-size: 14px;
+    height: 100vh;
 }
 #header{
-    display: flex;
-    flex-direction: row;
+    height: 10%;
+    width: 100%;
     background-color: #121921;
-    width: 100vw;
+    display: flex;
 }
-.font{
-    color: aliceblue;
-    font-size: 13px;
+#header img{
+    margin-top: 10px;
+}
+.ma{
+    display: flex;
+    background-color: #243040;
+    height: 5%;
+}
+.ma img{
+    margin-top: 5px;
+}
+.promain{
+   
+    background-color: #2C4A55;
+    position: absolute;
+height: 100vh;
+width: 100%;
+display: flex;
+}
+.pro,.pro1,.pro2,.pro3{
+    margin: 10px;
+    margin-top: 0%;
+    background-color: antiquewhite;
+    height: 300px;
+    width: auto;
+}
+
+.fonts{
+    color: black;
+    font-size: auto;
+}
+.product{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.product img{
+    height: 100px;
+}
+.right{
+    /* margin-left:100px; */
+}
+.back{
+    background-image: url("https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/09.amazon-clone/assets/background%20picture.png");
+    height: 300px;
+    width: 100%;
 }
