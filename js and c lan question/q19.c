@@ -20,4 +20,12 @@ for (int i = 0; i < len; i++) {
             }
         }
     }
+    if(arr==narr){
+        printf("true");
+    }
+else{
+        printf("false");
+    }
+
+    return 0;
 }
