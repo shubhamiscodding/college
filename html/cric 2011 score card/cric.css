@@ -1,0 +1,30 @@
+body{
+    background-image: url("https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/main/Cricket_App/backgroud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    margin-left: 75%;
+}
+table{
+    background-color: white;
+    height: 460px;
+    width: 800px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+td,th{
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.orenge{
+    background-color: orangered;
+}
+#wic{
+    padding-left: 15px;
+}
+#run,#four,#six,#sr,#ball{
+    text-align: center;
+}

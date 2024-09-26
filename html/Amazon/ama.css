@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: #121921;
+    width: 100vw;
+}
+.font{
+    color: aliceblue;
+    font-size: 13px;
+}

@@ -1,0 +1,31 @@
+div{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    column-gap: 15px;
+    row-gap: 15px;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: 40%;
+    background-color: #1C1C1C;
+    grid-column: 1/ span 4;
+}
+span{
+    text-align: center;
+    border: 2px solid #505050;
+    height: 47px;
+    border-radius: 100%;
+    justify-content: space-evenly;
+    background-color: #505050;
+}
+.top{
+    background-color: #A2A2A2;
+}
+.sp{
+    background-color: #FF9500;
+}
+#num{
+    width: 100px;
+    text-align: right;
+    font-size: 40px;
+}

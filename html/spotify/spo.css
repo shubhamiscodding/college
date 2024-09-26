@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#box{
+  display: grid;
+  grid-template-columns: 240px 100%;
+}
+#main{
+    background-color: #202020;
+}
+.page{
+    margin-left: 30px;
+}
+#pro{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.q1{
+    background-color: #303030;
+    border: 1px solid black;
+}
+#grid1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto  ;
+}
+#sidebar{
+    display: grid;
+    grid-template-columns: 60px 180px;
+    background-color: black;
+    height: 100vh;
+    width: 240px;
+}
+#logo{
+    width: 100px;
+    background-color: black;
+    grid-column: 1/span 2;
+   margin-left: 30px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+img{
+    height: 25px;
+}
+.fon{
+    color: whitesmoke;
+}
+.grid-col{
+    color: whitesmoke;
+    grid-column: 1/span 2;
+}
+#bottum{
+    grid-column: 1/span 2;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+.bottum{
+    height: 55px;
+    width: 100%;
+}

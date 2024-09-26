@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b3d4f; /* Background similar to a cricket ground */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.scoreboard-container {
+    text-align: center;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.score-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.team-score {
+    background-color: #1e88e5; /* Blue for IND */
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.pak {
+    background-color: #43a047; /* Green for PAK */
+}
+
+.score-circles {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.score-circles span {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bat-button {
+    background-color: #ffeb3b; /* Yellow for bat icon */
+}
+
+.reset-button {
+    background-color: #f44336; /* Red for reset icon */
+}
+
+button img {
+    width: 30px;
+}

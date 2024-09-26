@@ -1,0 +1,36 @@
+div{
+display: grid;
+grid-template-columns: 150px 150px 150px 150px 150px;
+text-align: center;
+margin-left: 20%;
+column-gap: 10px;
+}
+#space{
+    margin-top: 70px;
+    background-color: antiquewhite;
+}
+.score{
+    grid-column: 3/span 1;
+    grid-row: 1/ span 3;
+    font-size: 50px;
+}
+.img{
+    position: relative;
+    width: 140px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+.pow{
+    width: 150px;
+    font-size: 80px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.name{
+    width: 150px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

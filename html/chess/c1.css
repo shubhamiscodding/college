@@ -1,0 +1,57 @@
+/* body{
+     background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/01/black-wallpaper-1-768x576.jpg'); 
+     color: rgb(0, 136, 255); 
+    }
+
+#one{
+    display: flex; 
+    flex-direction: row;
+    border: 1px solid black; 
+    justify-content: ;
+}
+
+#two{
+    display: flex; 
+    flex-direction: row; 
+    border: 1px solid black; 
+    border-collapse: collapse;
+}
+
+.first{
+    width: 100%;
+    border: 2px dashed pink;
+}
+ 
+.sec{
+    width: 100%; 
+    border: 2px dotted yellow; 
+} */
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+ }
+ .first{
+    border: 1px solid rgb(0, 0, 0);
+    height: 70px;
+    width: 70px;
+    
+    background-color: black;
+ }
+ .odd{
+    border: 1px solid black;
+    height: 70px;
+    background-color: whitesmoke;
+ }
+
+ div #pice{
+    font-size: 50px;
+    text-align: center;
+    color: aqua;
+ }
+ div #black{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(4, 43, 43);
+ }

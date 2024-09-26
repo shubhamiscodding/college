@@ -169,7 +169,7 @@ if(num%2==0){
     count++;
 }
 }
-if(count==0){printf("is not prime mun");}
+if(count!=0){printf("is not prime mun");}
 else{printf("is prime num");}
 // 10
 int num=5;
