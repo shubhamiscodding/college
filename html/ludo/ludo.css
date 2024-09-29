@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#contain{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+    height: 100vh;
+}
+.red{
+    border: 10px solid red;
+    grid-column: 1/span 6;
+    grid-row: 1/span 6;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.r{
+    border: 3px solid red;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.green{
+    border: 10px solid green;
+    grid-column: 10/span 6;
+    grid-row: 1/span 6;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.g{
+    border: 3px solid green;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.blue{
+    border: 10px solid blue;
+    grid-column: 1/span 6;
+    grid-row: 10/span 6;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.b{
+    border: 3px solid blue;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.yellow{
+    border: 10px solid yellow;
+    grid-column: 10/span 6;
+    grid-row: 10/span 6;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.y{
+    border: 3px solid yellow;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.ren{
+    height: 50px;
+   border: 1px solid black;
+}
+#gcolor{
+    background-color: green;
+}
+#rcolor{
+    background-color: red;
+}
+#ycolor{
+    background-color: yellow;
+}
+#bcolor{
+    background-color: blue;
+}
