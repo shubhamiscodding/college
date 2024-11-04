@@ -15,4 +15,4 @@ int len=sizeof(arr)/sizeof(arr[1]);
 int diff=arr[len]-arr[0];
 printf("%d",diff);
     return 0;
-}
+}  

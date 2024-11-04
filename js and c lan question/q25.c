@@ -7,7 +7,7 @@ int main() {
    int len = sizeof(a)-1;
    for (int i=0;i<len;i++){
        b[i]=a[i];
-       printf("%c\n",b[i]);
+       printf("%c",b[i]);
    }
     return 0;
 }

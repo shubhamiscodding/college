@@ -6,7 +6,6 @@ int num=221212121;
 int i=num;
 int sum=0;
 int odd=0;
-num=i;
 while(num != 0){
     num=i;
     num=num%10;

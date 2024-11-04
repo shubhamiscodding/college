@@ -32,7 +32,7 @@ function even_or_odd(){
     }else{
         console.log(A,"it is an odd numner")
     }
-    
+    // same conduiation for prime num
 }
 even_or_odd()
 
@@ -87,18 +87,18 @@ Asort = A.sort()
 rev = Asort.reverse()
 console.log(rev)
 
-// // 10
-// function containsSubstring(str, substr) {
-//     for (i = 0; i < str.length; i++) {
-//       for (j = 0; j < substr.length; j++) {
-//         if (str[i + j] !== substr[j]) break;
-//       }
-//       if (j === substr.length) return true;
-//     }
-//     return false;
-//   }
+// 10
+function containsSubstring(str, substr) {
+    for (i = 0; i < str.length; i++) {
+      for (j = 0; j < substr.length; j++) {
+        if (str[i + j] !== substr[j]) break;
+      }
+      if (j === substr.length) return true;
+    }
+    return false;
+  }
   
-// console.log(containsSubstring('hello world', 'world'));
+console.log(containsSubstring('hello world', 'world'));
 
 // 11
 array = [1, 2, 3, 4, 5]
