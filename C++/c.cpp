@@ -627,18 +627,41 @@
 
 
 // method-2
-#include<iostream>
-#include<string>
-using namespace std;
-int con(string str1,string str2){
-    return str1+str2;
-}
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// string con(string str1,string str2){
+//     return str1 + " " + str2;
+// }
+// int main(){
+//     string str1="hello";
+//     string str2="world";
+//     cout << con(str1,str2) << endl;
+// }
+
+
+// method-3
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// string con(string str1,string str2){
+//     for(int i=0;i<str2.length();i++){
+//      str1 += str2[i];
+//     }
+//     return str1;
+// }
+// int main(){
+//     string str1="hello";
+//     string str2=" world";
+//     cout << con(str1,str2) << endl;
+// }
+
+
 
 
 // q24
 // #include<iostream>
 // #include<string>
-// #include<vector>
 // using namespace std;
 
 // int main(){
@@ -652,6 +675,554 @@ int con(string str1,string str2){
 // }
 
 
+// q-25
+// #include <iostream>
+// #include <sstream>
+// #include <vector>
+// using namespace std;
+
+// int main() {
+//     string inputString = "Hello world, welcome to JavaScript!";
+//     string word;
+//     vector<string> words;
+
+//     istringstream stream(inputString);
+//     while (stream >> word) {
+//         words.push_back(word);
+//     }
+
+//     for (const auto& w : words) {
+//         cout << "'" << w << "' ";
+//     }
+
+//     return 0;
+// }
+
+// method-2
+// #include <iostream>
+// #include <vector>
+// #include <regex>
+// using namespace std;
+
+// int main() {
+//     string inputString = "Hello world, welcome to JavaScript!";
+//     regex word_regex("\\w+"); // Regular expression to match words
+//     vector<string> words;
+    
+//     // Use regex_iterator to find all matches
+//     auto words_begin = sregex_iterator(inputString.begin(), inputString.end(), word_regex);
+//     auto words_end = sregex_iterator();
+    
+//     for (auto it = words_begin; it != words_end; ++it) {
+//         words.push_back(it->str());
+//     }
+
+//     // Print each word
+//     for (const auto& w : words) {
+//         cout << "'" << w << "' ";
+//     }
+
+//     return 0;
+// }
+
+// q-26
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// bool check(string str,char latter){
+//     if(str[str.length()-1] == latter){
+//         return true;
+//     }
+//     return false;
+// }
+// int main(){
+//     string str="codinggita";
+//     char latter='a';
+
+//     cout <<check(str,latter);
+//     return 0;
+// }
+
+
+// method-2
+// #include<iostream>
+// using namespace std;
+// bool check(string str,char latter){
+//     if(str.back()==latter){
+//         return true;
+//     }
+//     return false;
+// }
+// int main(){
+//     string str="codinggita";
+//     char latter='a';
+
+//     cout <<check(str,latter);
+//     return 0;
+// }
+
+
+// q-27
+// #include <iostream>
+// #include<string>
+// using namespace std;
+
+// string extract(string file){
+//     string str;
+//     bool isfind=false;
+//     int l=file.size();
+//     for (int i=0;i<l;i++){
+//         if(file[i]=='.'){
+//             isfind=true;
+//             continue;
+//         }
+//         if(isfind){
+//        str += file[i];
+//         }
+//     }
+//     return str;
+// }
+
+// int main() {
+//     string file="doc.html";
+    
+//     cout << extract(file);
+
+//     return 0;
+// }
+
+
+// method-2
+// #include <string>
+// #include <iostream>
+// using namespace std;
+
+// string fileex(string file){
+//     int pos =file.rfind('.');
+//     return file.substr(pos+1);
+//     return "";
+// }
+// int main(){
+//     string file="file.txt";
+//     cout<<"using fileex function and rfind:" <<fileex(file)<<endl;
+//     return 0;
+// }
+
+
+
+// method-3
+// #include <iostream>
+// #include<string>
+// using namespace std;
+// string fileex(string file){
+//     size_t pos = file.find_last_of('.');
+//     return file.substr(pos+1);
+//     return "";
+// }
+// int main(){
+//     string file="file.PDF";
+//     cout <<fileex(file) << endl;
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+// q-28
+
+// #include<iostream>
+// using namespace std;
+// int largnum(int num1,int num2){
+//     if(num1>num2){
+//         cout << num1 << " is the largest num";
+//     }else if(num1==num2){
+//         cout << " both num is equal";
+//     }else{
+//         cout << num2 << " is the largest num";
+//     }
+//     return 0;
+// }
+// int main(){
+//     int num1=99;
+//     int num2=90;
+//     largnum(num1,num2);
+//     return 0;
+// }
+
+
+// method-2
+// #include<iostream>
+// using namespace std;
+// int max(int num1,int num2){
+//     cout << "the largest num is : ";
+//     return num1>num2?num1:num2;
+// }
+
+// int main(){
+//     int num1=100;
+//     int num2=20;
+//     cout << max(num1,num2) << endl;
+//     return 0;
+// }
+
+// method-3
+// #include<iostream>
+// #include<algorithm>
+// using namespace std;
+// int maximum(int num1,int num2){
+//     cout << "the largest number is : ";
+//     return max(num1,num2);
+// }
+// int main(){
+//     int num1=99;
+//     int num2=55;
+//     cout << maximum(num1,num2) << endl;
+// }
+
+
+
+
+
+// q-29
+
+// #include<iostream>
+// using namespace std;
+
+
+// void checksum(int arr[],int target,int l){
+//     int result[]={};
+//     for(int i=0;i<l-1;i++){
+//         for(int j=i+1;j<l;j++){
+//             if(arr[i]+arr[j]==target){
+//                 cout << i << "   " <<j << " index no";
+//                 return;
+//             }
+//         }
+//     }  cout << "No pair found" << endl;
+// } 
+// int main(){
+//     int arr[]={1,2,23,4};
+//     int target=9;
+//     int l=sizeof(arr)/sizeof(arr[0]);
+
+//      checksum(arr,target,l);
+//      return 0;
+// }
+
+// method-2
+
+
+
+// q30
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//    int n =123456,even = 0,odd = 0,reminder;
+   
+//    while(n>0){
+//        reminder = n%10;
+//        if(reminder%2==0){
+//            even+=reminder;
+//        }else{
+//            odd+=reminder;
+//        }
+//        n=n/10;
+//    }
+
+//  cout << "Sum of even digits: " << even << endl;
+//     cout << "Sum of odd digits: " << odd << endl;
+
+//  return 0;
+// }
+
+
+
+// q31
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//    int n =3;
+//    string s = "Hello";
+   
+//    for(int i=0;i<n;i++){
+//        cout<<s;
+//    }
+
+
+//     return 0;
+// }
+
+
+// method-2
+// #include<iostream>
+// using namespace std;
+// #include<string>
+// string rep(string str,int n){
+//     string result="";
+//     for(int i=0;i<n;i++){
+//         result+=str;
+//     }
+//     return result;
+// }
+// int main(){
+//     string str="Hello";
+//     int n=3;
+//     cout<<rep(str,n)<<endl;
+//     return 0;
+// }
+
+
+// leetcode question
+// class Solution {
+// public:
+//     bool isPrefixString(string s, vector<string>& words) {
+//         string result="";
+//         for(int i=0;i<words.size();i++){
+//             result += words[i];
+//             if(result == s){
+//                 return true;
+//             }
+//         }
+//     return false;
+//     };
+// };
+
+// q32
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// string categorizeAgeIfElse(int age) {
+//     if (age < 0) {
+//         return "Invalid age";
+//     } else if (age < 13) {
+//         return "Child";
+//     } else if (age < 18) {
+//         return "Teenager";
+//     } else if (age < 60) {
+//         return "Adult";
+//     } else {
+//         return "Senior";
+//     }
+// }
+
+// int main() {
+//     int age;
+//     cout << "Enter age: ";
+//     cin >> age;
+//     cout << categorizeAgeIfElse(age) << std::endl;
+//     return 0;
+// }
+
+// q-33
+// #include<iostream>
+// using namespace std;
+
+// bool check(int year){
+//     if(year%100==0){
+//         return true;
+//     }
+//     return false;
+// }
+// int main(){
+//     int year=2002;
+//     cout<<check(year)<<endl;
+// }
+
+// method-2
+// #include<iostream>
+// using namespace std;
+// string cent(int year){
+//     return (year%100==0)?"century":"notcentury";
+// }
+// int main(){
+//     int year=2002;
+//     cout << cent(year) << endl;
+//     return 0;
+// }
+
+
+// q-34
+// #include<iostream>
+// using namespace std;
+// void check(int arr[],int n){
+    
+//     for(int i=0;i<n;i++){
+//         if(i==0 || i==n-1){
+//             cout << arr[i] << endl;
+//         }
+//     }
+// }
+// int main(){
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     check(arr,n);
+//     return 0;
+// }
+
+// method-2
+// #include<iostream>
+// using namespace std;
+
+// void check(int* arr, int n) {
+//     cout << *arr << endl;         
+//     cout << *(arr + n - 1) << endl; 
+// }
+
+// int main() {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     check(arr, n);
+//     return 0;
+// }
+
+
+// method-3
+// #include<iostream>
+// using namespace std;
+
+// void check(int arr[], int n, int i = 0) {
+//     if (i == 0) {
+//         cout << arr[i] << endl; 
+//     }
+//     if (i == n - 1) {
+//         cout << arr[i] << endl; 
+//     }
+//     if (i < n - 1) {
+//         check(arr, n, i + 1); 
+//     }
+// }
+
+// int main() {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     check(arr, n);
+//     return 0;
+// }
+
+
+
+
+// q-35
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//    int n=5;
+//    for(int i=5;i>=0;i--){
+//        for(int j=1;j<i;j++){
+//            cout<<"*";
+//            continue;
+//        }
+//        cout << endl;
+//    }
+//     return 0;
+// }
+
+
+// method-2
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n=5;
+//     for(int i=0;i<n;i++){
+//         cout << string(n-i,'*') << endl;
+//     }
+//     return 0;
+// }
+
+
+// method-3
+// #include <iostream>
+// using namespace std;
+
+// void printStars(int n, int i) {
+//     if (i == n) return; 
+
+//     for (int j = 0; j < n - i; j++) {
+//         cout << "*";
+//     }
+
+//     cout << endl; 
+//     printStars(n, i + 1);
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter number of rows: ";
+//     cin >> n; 
+
+//     printStars(n, 0);
+
+//     return 0;
+// }
+
+// q-36
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main(){
+//     int n=5;
+//     for(int i=0;i<n;i++){
+//         string row="";
+//         row += string(n-i-1,' ');
+//         row+=string(2*i+1,'*');
+//         cout << row << endl;
+//     }
+//     return 0;
+// }
+
+
+// method-2
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n=5;
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n-i-1;j++){
+//         cout <<" ";
+//         }
+//         for(int k=0;k<2*i+1;k++){
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+
+// method-3
+// #include<iostream>
+// using namespace std;
+// void pyramid(int n,int i){
+//     if(i==n) return;
+//     for(int j=0;j<n-i-1;j++){
+//     cout << " ";
+//     }
+//     for(int k=0;k<2*i+1;k++){
+//         cout << "*";
+//     }
+//     cout << endl;
+//     pyramid(n,i+1);
+// }
+
+// int main(){
+//     int n=5;
+//     pyramid(n,0);
+//     return 0;
+// }
+
+
+
+// q-37
 
 
 
@@ -666,27 +1237,61 @@ int con(string str1,string str2){
 
 
 
+// leetcode  709
+// class Solution {
+// public:
+//     string toLowerCase(string s) {
+//      for (int i=0;i<=s.length();i++){
+//         if(s[i]>64 && s[i]<91){
+//             s[i]+=32;
+//         }
+//      }   
+//      return s;
+//     }
+// };
+
+
+// method2
+// class Solution {
+// public:
+//     string toLowerCase(string s) {
+//      for (char& c : s) {
+//             c = tolower(c); 
+//         }  
+//      return s;
+//     }
+// };
 
 
 
 
+// leetcode 344
+// class Solution {
+// public:
+//     void reverseString(vector<char>& s) {
+//         vector <char> str(s.size());
+//         for (int i=s.size()-1;i>=0;i--){
+//             str[s.size()-1-i]=s[i];
+//         }
+//         s=str;
+//     }
+// };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// method2
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char arr[]={'h','e','l','o'};
+//     int left=0;
+//     int right=sizeof(arr)-1;
+//     while(left<right){
+//         swap(arr[left],arr[right]);     
+//         left++;
+//         right--;
+//     }
+//     cout<<arr<<endl;
+//     return 0;
+// }
 
 
 
