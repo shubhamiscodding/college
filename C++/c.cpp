@@ -1367,3 +1367,51 @@
 //         cout << arr[i] << " ";
 //     }
 // }
+
+
+
+
+
+// leetcode 283
+// Online C++ compiler to run C++ program online
+// #include <iostream>
+// #include<vector>
+
+// using namespace std;
+
+
+// int main() {
+// vector<int> arr={0,1,0,5,6};
+// int count=0;
+// vector<int> nonzero={};
+//  for (int i=0;i<arr.size();i++){
+//      if(arr[i]!=0){
+//          nonzero.push_back(arr[i]);
+//      }else{
+//          count++;
+//      }
+//  }
+// for (int i = 0; i < count; ++i) {
+//     nonzero.push_back(0);
+// }
+
+// for(int i=0;i<nonzero.size();i++){
+//     cout << nonzero[i] << " ";
+// }
+
+//     return 0;
+// }
+
+
+// leetcode-48
+// matrix=[[1,2,3],[4,5,6],[7,8,9]];
+// let arr = Array.from({ length: 3 }, () => Array(3).fill(0));
+// matrix=matrix.reverse();
+
+// for(let i=0;i<3;i++){
+//     for(let j=0;j<3;j++){
+//         arr[i][j]=matrix[3 -j-1][i];
+//     }
+// }
+// arr = arr.map(row => row.reverse());
+// console.log(arr)
