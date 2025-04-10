@@ -1,0 +1,28 @@
+<pre class="text" style="background-color: black">
+  i wanna
+    see the {{ title }}.    creating the table
+  </pre>
+  
+  <p>Response ID: {{ responseData?.id }}</p>
+  <pre>{{ responseData | json }}</pre>
+  
+
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users" [attr.data-id]="user.id">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
