@@ -7,6 +7,9 @@ import Que4 from './pages/Que4';
 import Que5 from './pages/Que5';
 import Que6 from './pages/Que6';
 import Que7 from './pages/Que7';
+import Que8 from './pages/Que8';
+import Que9 from './pages/Que9';
+import Que10 from './pages/Que10';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/q5" element={<Que5 />} />
           <Route path="/q6" element={<Que6 />} />
           <Route path="/q7" element={<Que7 />} />
+          <Route path="/q8" element={<Que8 />} />
+          <Route path="/q9" element={<Que9 />} />
+          <Route path="/q10" element={<Que10 />} />
           <Route path="*" element={<h2>404 Not Found</h2>} /> {/* Fixed syntax here */}
         </Routes>
       </div>
