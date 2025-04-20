@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
