@@ -39,10 +39,10 @@ return transfer(root->right);
 
 Node* check(Node* root){
     if(root->left == nullptr){
-        return root->left;
+        return root->right;
     }
     if(root->right == nullptr){
-        return root->right;
+        return root->left;
     }
     
     Node* rightnode = root -> right;
@@ -66,7 +66,7 @@ Node* Bstdelete(Node* root,int k){
                 temp = temp -> left;
             }
         }else if(temp -> data < k){
-         if(temp -> right != nullptr && temp -> right -> data == k){
+            if(temp -> right != nullptr && temp -> right -> data == k){
                 temp -> right = check(temp->right);
                 break;
             }else{
