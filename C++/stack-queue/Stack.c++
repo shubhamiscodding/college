@@ -9,45 +9,44 @@ public:
 
 class Stack {
 private:
-    Node* top; // points to last node
+    Node* base; // points to last node
 public:
-    Stack() { top = NULL; }
+    Stack() { base = NULL; }
 
     void push(int x) {
         Node* newNode = new Node();
         newNode->data = x;
         newNode->next = NULL;
-        if (top == NULL) {
-            top = newNode;
-        } else {
-            Node* temp = top;
-            while (temp->next != NULL) temp = temp->next;
-            temp->next = newNode;
+        if (base == NULL) {
+            base = newNode;
         }
+        Node* temp = base;
+        while (temp->next != NULL) temp = temp->next;
+            temp->next = newNode;
     }
 
     void pop() {
-        if (top == NULL) {
+        if (base == NULL) {
             cout << "Stack is empty!" << endl;
             return;
         }
-        if (top->next == NULL) { // only one element
-            delete top;
-            top = NULL;
+        if (base->next == NULL) { // only one element
+            delete base;
+            base = NULL;
             return;
         }
-        Node* temp = top;
+        Node* temp = base;
         while (temp->next->next != NULL) temp = temp->next;
         delete temp->next;
         temp->next = NULL;
     }
 
     void display() {
-        if (top == NULL) {
+        if (base == NULL) {
             cout << "Stack is empty" << endl;
             return;
         }
-        Node* temp = top;
+        Node* temp = base;
         cout << "Stack elements: ";
         while (temp != NULL) {
             cout << temp->data << " ";
