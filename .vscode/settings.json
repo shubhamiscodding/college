@@ -3,7 +3,8 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "new": "cpp"
     },
     "CodeGPT.apiKey": "CodeGPT Plus Beta",
     "java.debug.settings.onBuildFailureProceed": true

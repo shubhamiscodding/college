@@ -157,6 +157,10 @@ void deleteAtEnd(Node*& head)
     // and delete the last node.
     temp->prev->next = nullptr;
     delete temp;
+// // // // OROROROROROROROROROROROROROROROROROR
+    // while (temp->next->next != NULL) temp = temp->next;
+    //     delete temp->next;
+    //     temp->next = NULL;
 }
 
 // Function to delete a node from a specified position in
