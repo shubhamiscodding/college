@@ -18,6 +18,18 @@ export default function Nav(){
             <Link href="/github" className="text-gray-800 font-semibold hover:text-blue-600">
               Github
             </Link>
+            <Link href="/csr" className="text-gray-800 font-semibold hover:text-blue-600">
+              CSR
+            </Link>
+            <Link href="/isr" className="text-gray-800 font-semibold hover:text-blue-600">
+              ISR
+            </Link>
+            <Link href="/ssr" className="text-gray-800 font-semibold hover:text-blue-600">
+              SSR
+            </Link>
+            <Link href="/ssg" className="text-gray-800 font-semibold hover:text-blue-600">
+              SSG
+            </Link>
           </nav>
         </div>
         </>
