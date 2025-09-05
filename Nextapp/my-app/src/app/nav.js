@@ -30,6 +30,9 @@ export default function Nav(){
             <Link href="/ssg" className="text-gray-800 font-semibold hover:text-blue-600">
               SSG
             </Link>
+            <Link href="/api/mongodb" className="text-gray-800 font-semibold hover:text-blue-600">
+              mongodb
+            </Link>
           </nav>
         </div>
         </>
