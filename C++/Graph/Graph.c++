@@ -18,7 +18,7 @@ int main() {
         cin >> u >> v ;
         // cin >> num ;
         cout << endl;
-        matrix[u][v] = num;
+        matrix[u][v] = 1;
         // matrix[v][u] = num;   //bi directional
     }
     cout << endl;
