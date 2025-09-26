@@ -4,6 +4,8 @@
 using namespace std;
 
 
+
+
 int main() {
     int row , col;
     cout << "enter row and col :";
@@ -11,6 +13,8 @@ int main() {
     cout << endl;
     
     vector<vector<int>> matrix(row,vector<int>(col,0));
+
+    // matrix lsit
     
     int u , v;
     // int num;  //weighted nums

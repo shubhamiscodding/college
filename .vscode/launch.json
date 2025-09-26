@@ -1,9 +1,8 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "Run C++ file",
+            "name": "Run C++ File",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -12,8 +11,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\mingw64\\mingw-w64-v11.0.0\\mingw64\\bin\\gdb.exe"
+            "preLaunchTask": "Run Executable"
         }
     ]
 }
