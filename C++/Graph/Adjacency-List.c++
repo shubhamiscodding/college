@@ -10,6 +10,7 @@ int main() {
     cout << endl;
     
     vector<int> addList[vertices];
+    // vector<pair<int,int>> addList[vertices];
     
     int u , v;
     // int num;  //weighted nums
