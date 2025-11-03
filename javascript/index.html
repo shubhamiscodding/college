@@ -4,5 +4,15 @@
 <body>
     <div id="container">
         Hello World
+        
+        <br>
+        <hr>
+
+        <form onsubmit="return false;">
+            <input type="text" id="search" onkeyup="sendMessageWithThrottle(this.value)">
+            <button type="button" id="searchBtn">Search</button>
+        </form>
+        <div id="results" aria-live="polite"></div>
+        
     </div>
 </body>
