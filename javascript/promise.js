@@ -395,47 +395,176 @@
 
 
 
-class person{
-    #email;
-    constructor(name,age,email){
-        this.name = name;
-        this.age = age;
-        this.#email = email;
-    }
+// class Person {
+//     #email;
+//     constructor(name, age, email) {
+//         this.name = name;
+//         this.age = age;
+//         this.#email = email;
+//     }
 
-    getinfo(){
-        return `name : ${this.name} age : ${this.age} email : ${this.#email}`;
-    }
-}
+//     getinfo() {
+//         return `name: ${this.name}, age: ${this.age}, email: ${this.#email}`;
+//     }
+// }
 
-class emp1 extends person{
-    constructor(name,age,email,emp_id,salary,department){
-        super(name,age,email);
-        this.emp_id = emp_id;
-        this.salary = salary;
-        this.department = department;
-    }
+// class Emp1 extends Person {
+//     constructor(name, age, email, emp_id, salary, department) {
+//         super(name, age, email);
+//         this.emp_id = emp_id;
+//         this.salary = salary;
+//         this.department = department;
+//     }
 
-    setSalary(newSalary){
-        this.salary = newSalary;
-    }
+//     setSalary(newSalary) {
+//         this.salary = newSalary;
+//     }
 
-    getSalary(){
-        return this.salary;
-    }
+//     getSalary() {
+//         return this.salary;
+//     }
 
-    work(){
-        return `${this.name} is working`;
-    }
+//     work() {
+//         return `${this.name} is working`;
+//     }
 
-    getEmployinfo(){
-        return `${super.getinfo()}, emp_id : ${this.emp_id} salary : ${this.salary} department : ${this.department}`;
+//     getEmployinfo() {
+//         return `${super.getinfo()}, emp_id: ${this.emp_id}, salary: ${this.salary}, department: ${this.department}`;
+//     }
+// }
 
-    }
+// const emp = new Emp1("Jay", 15, "shubham@gmail.com", 12, 1020000, "IT");
+// console.log(emp.getEmployinfo());
+// console.log(emp.work());
 
-}
+// class Manager extends Emp1 {
+//     #managerEmployees;
+
+//     constructor(name, age, email, emp_id, salary, department, teamSize) {
+//         super(name, age, email, emp_id, salary, department);
+//         this.teamSize = teamSize;
+//         this.#managerEmployees = [];
+//     }
+
+//     addEmployee(employee) {
+//         if (employee instanceof Emp1 && !(employee instanceof Manager)) {
+//             this.#managerEmployees.push(employee);
+//             return `${employee.name} has been added to ${this.name}'s team.`;
+//         } else {
+//             return `Invalid employee.`;
+//         }
+//     }
+
+//     getEmployee() {
+//         return this.#managerEmployees.map(emp => emp.name);
+//     }
+
+//     work() {
+//         return `${this.name} is managing a team of ${this.teamSize} employees in the ${this.department} department.`;
+//     }
+// }
+
+// // Example usage
+// const manager = new Manager("Shubham", 28, "manager@gmail.com", 1001, 200000, "IT", 5);
+// console.log(manager.work());
+// console.log(manager.addEmployee(emp));
+// console.log(manager.getEmployee());
 
 
-const emmp = new emp1("jay",15,"shubhan@gmail.com",12,1020000,"it");
-console.log(emmp.getEmployinfo());
-console.log(emmp.work());
+
+// class devloper extends Manager {
+//     language;
+//     #project;
+
+//     constructor(name, age, email, emp_id, salary, department, teamSize, language, project) {
+//         super(name, age, email, emp_id, salary, department, teamSize);
+//         this.language = language;
+//         this.#project = project;
+//     }
+
+//     writecode(){
+//         return `${this.name} is writing code`;
+//     }
+
+//     completproject(){
+//         return `${this.name} is completing project`;
+//     }
+
+//     getprojectcount(){
+//         return `${this.name} has completed ${this.#project} projects`;
+//     }
+
+//     work(){
+//         return `$${this.firstName} is working`
+//     }
+
+//     introduction(){
+//         return `name : ${this.name}, language : ${this.language} ${super.getEmployinfo()}`;
+//     }
+// }
+
+
+// const dev = new devloper("sam","python");
+// console.log(dev.introduction());
+// console.log(dev.work());
+// console.log(dev.writecode());
+// console.log(dev.completproject());
+// console.log(dev.getprojectcount());
+
+
+
+
+
+
+// class calculator {
+//     add(...number){
+//         if(number.length == 0) return;
+//         if(number.length == 1 && typeof number[0] === 'number') return number[0];
+
+//         if(number.length == 2) return number[0]+number[1];
+//         return number.reduce((sum,num)=> sum + num ,0);
+//     }
+// }
+
+
+// let cal = new calculator();
+// console.log(cal.add());
+// console.log(cal.add(2,5));
+// console.log(cal.add(2,5,5,6));
+
+
+
+
+// class card{
+//     pay(){
+//         console.log("paid by the card");
+//     }
+// }
+
+// class upi{
+//     pay(){
+//         console.log("pay by the upi");
+//     }
+// }
+
+
+// class onlinepay{
+//     pay(){
+//         console.log("pay by the onlinebanking");
+//     }
+// }
+
+
+
+// function paynow(method){
+//     method.pay();
+// }
+
+
+// const cardpay = new card();
+// const upipay = new upi();
+// const onlinebanking = new onlinepay();
+
+// paynow(cardpay);
+// paynow(upipay);
+// paynow(onlinebanking);

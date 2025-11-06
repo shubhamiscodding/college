@@ -4,11 +4,9 @@
 
 // int main() {
 //     int arr[] = {1,2,3,4,5,6,7,8,9,9,8,5,2,8,4,2,6};
-    
-    
-    
+
 //     int n = sizeof(arr) / sizeof(arr[0]);
-    
+
 //     int smallest = arr[0];
 //     int largest = arr[0];
 
@@ -18,16 +16,15 @@
 //         if (arr[i] > largest)
 //             largest = arr[i];
 //     }
-    
+
 //      cout << smallest << endl;
 //     cout << largest << endl;
 // }
 
-
 // void reversearr(int arr[], int n){
 //     int left =0;
 //     int right = n-1;
-    
+
 //     while(left<right){
 //         int temp = arr[left];
 //         arr[left] = arr[right];
@@ -35,17 +32,14 @@
 //     }
 // }
 
-
-
 // #include <iostream>
-// #include <climits>  
+// #include <climits>
 // using namespace std;
-
 
 // int  findSecondLargest(int arr[], int n){
 //     int first = INT_MIN;
 //     int second = INT_MIN;
-    
+
 //     for(int i=0; i<n; i++){
 //         if(arr[i]>first){
 //             second = first;
@@ -55,7 +49,7 @@
 //             second = arr[i];
 //         }
 //     }
-    
+
 //     if (second == INT_MIN)
 //         cout << "No second largest element (all elements are equal)." << endl;
 //     else
@@ -63,8 +57,6 @@
 
 //     return second;
 // }
-
-
 
 // int main() {
 //     int arr[] = {10, 20, 4, 45, 99, 99};
@@ -74,16 +66,15 @@
 //     return 0;
 // }
 
-
 // #include <iostream>
 // using namespace std;
 
 // void moveZeroes(int arr[], int n) {
-//     int j = 0;  
+//     int j = 0;
 
 //     for (int i = 0; i < n; i++) {
 //         if (arr[i] != 0) {
-            
+
 //             int temp = arr[i];
 //             arr[i] = arr[j];
 //             arr[j] = temp;
@@ -98,14 +89,12 @@
 
 //     moveZeroes(arr, n);
 
-    
 //     for (int i = 0; i < n; i++) {
 //         cout << arr[i] << " ";
 //     }
 
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -120,7 +109,7 @@
 //     for(int num : arr){
 //         sum += num;
 //         if(max < num){
-//             max = num; 
+//             max = num;
 //         }
 //         if(min > num){
 //             min = num;
@@ -133,7 +122,6 @@
 //      cout << "missing num in the array is : " << sum - actual << endl;
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -161,7 +149,6 @@
 //     return 0;
 // }
 
-
 // #include<iostream>
 // using namespace std;
 // #include<string>
@@ -180,7 +167,6 @@
 //     }
 //     return 0;
 // }
-
 
 // #include<iostream>
 // using namespace std;
@@ -205,23 +191,132 @@
 //     return 0;
 // }
 
+// #include<iostream>
+// #include<set>
+// using namespace std;
+
+// int main(){
+//     int arr[] = {5,7,1,4,2,9,11};
+//     int target = 9;
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     set<int> m;
+//     for(int i=0;i<n;i++){
+//         int diff = target - arr[i];
+//         if(m.find(diff) != m.end()){
+//             cout << "pair found : " << arr[i] << " , " << diff << endl;
+//         }
+//         m.insert(arr[i]);
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int arr[] = {0, -1, 2, -3, -6, 5, 4, 7};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int i = 0;
+//     for(int j=1;j<n;j++){
+//         if(arr[j] >= 0){
+//             i++;
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
+
+//     for (int nums : arr)
+//     {
+//         cout << nums << " ";
+//     }
+    
+//     return 0;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[] = {0,1,1,0,2};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int  j = n-1;
+//     int i =0;
+//     int k =0;
+
+//     while(k <= j){
+//         if(arr[k] == 0){
+//             swap(arr[i],arr[k]);
+//             k++;
+//             i++;
+//         }else if(arr[k] == 2){
+//             swap(arr[k],arr[j]);
+//             k++;
+//             j--;
+//         }else{
+//             k++;
+//         }
+//     }
+    
+
+//     for(int num : arr){
+//         cout << num << " ";
+//     }
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[] = {2,3,-8,7,-1,2,3};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int maxsum = INT8_MIN;
+//      int sum = 0;
+//     for(int i =0;i<n;i++){
+//        sum += arr[i];
+//         // for(int j = i+1;j<n;j++){
+//         //     sum += arr[j];
+//         //     if(sum > maxsum){
+//         //         maxsum = sum;
+//         //     }
+//         // }
+
+//         if(sum > maxsum){
+//             maxsum = sum;
+//         }
+//         if(sum < 0){
+//             sum = 0;
+//         }
+//     }
+//         cout << "MAXSUM :" << maxsum << endl;
+//     return 0;
+// }
+
+
+
 
 
 #include<iostream>
-#include<set>
 using namespace std;
+#include<map>
 
 int main(){
-    int arr[] = {5,7,1,4,2,9,11};
-    int target = 9;
+    int arr[] = {-1,2,-1,3,2};
     int n = sizeof(arr)/sizeof(arr[0]);
-    set<int> m;
+    map<int , int> freq;
     for(int i=0;i<n;i++){
-        int diff = target - arr[i];
-        if(m.find(diff) != m.end()){
-            cout << "pair found : " << arr[i] << " , " << diff << endl;
-        }
-        m.insert(arr[i]);
+        freq[arr[i]]++;
     }
-    return 0;
+
+    for(auto pair : freq){
+        if(pair.second == 1){
+            cout << pair.first  << endl;
+        }
+    }
 }
