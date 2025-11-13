@@ -316,7 +316,7 @@ int main(){
 
     for(auto pair : freq){
         if(pair.second == 1){
-            cout << pair.first  << endl;
+            cout << "first non reapting num : " << pair.first  << endl;
         }
     }
 }
